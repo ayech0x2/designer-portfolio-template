@@ -10,8 +10,9 @@ export default class Top extends React.Component {
   render() {
     return (
       <Fragment>
-        <div className="container top-container p-16 remove-padding">
-          <div className="left-side">
+        <div className="container top-container p-16 remove-padding d-sm-flex flex-column flex-sm-column flex-md-column flex-lg-row
+        align-items-center">
+          <div className="left-side mb-5">
             <span className="hello">Hello, I'm</span>
             <span className="name">Lewis Nathaniel</span>
             <span className="uiux">UI & UX Designer</span>
@@ -28,8 +29,8 @@ export default class Top extends React.Component {
               <span className="btn-none-rounded">see my resume</span>
             </div>
           </div>
-          <div className="right-side">
-            <img alt="designer" src={Designer} />
+          <div className="right-side ">
+            <img alt="designer" src={Designer} className="img-auto"/>
           </div>
         </div>
         <hr className="hr remove-margin" />

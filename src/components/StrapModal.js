@@ -1,13 +1,12 @@
 // This is a reactstrap Modal
 import React from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
+import {  Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 export default class StrapModal extends React.Component {
   toggle = () => {
     this.props.handleCard();
   };
   render() {
-    console.log(this.props.element);
     return (
       <div>
         <Modal

@@ -3,7 +3,7 @@ import React from "react";
 export default class ReadMe extends React.Component {
   render() {
     return (
-      <div className="container mt-10 mb-5 read-me">
+      <div className="container mt-10 mb-5 read-me flex-wrap">
         <div className="article m-2">
           <div className="box m-2">
             <div className="little-box">

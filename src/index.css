@@ -367,6 +367,10 @@ input:focus {
   border: 1px solid #8d8d8e;
   padding: 5px;
 }
+.img-auto{
+  width: 100%;
+  height: auto;
+}
 @media (max-width: 575px) {
 }
 
