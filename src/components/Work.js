@@ -1,14 +1,5 @@
 import React, { Fragment } from "react";
 import { Card, CardImg, CardBody } from "reactstrap";
-import Design0 from "../static/img/design0.jpg";
-import Design1 from "../static/img/design1.jpg";
-import Design2 from "../static/img/design2.jpg";
-import Design3 from "../static/img/design3.jpg";
-import Design4 from "../static/img/design4.jpg";
-import Design5 from "../static/img/design5.jpg";
-import Design6 from "../static/img/design6.jpg";
-import Design7 from "../static/img/design7.jpg";
-import Design8 from "../static/img/design8.jpg";
 
 export default class Work extends React.Component {
   render() {
