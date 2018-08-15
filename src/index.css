@@ -10,6 +10,9 @@ body {
 input:focus {
   outline: none;
 }
+::-webkit-scrollbar{
+  display: none;
+}
 #root {
   height: 100%;
   width: 100%;
@@ -159,6 +162,30 @@ input:focus {
   font-weight: 700;
   cursor: pointer;
 }
+.work-modal span{
+  font-size: 14px;
+  color: #393939;
+  line-height: 1.4;
+}
+.modal-footer{
+  display: flex!important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  align-items: center;
+}
+.work-modal-title h5{
+  font-weight: 700 !important;
+  font-size: 25px;
+}
+.modal-footer span{
+  margin: 10px!important;
+  font-size: 16px!important;
+}
+.work-modal{
+  display:flex;
+  flex-direction: column;
+  padding: 20px!important;
+}
 .card {
   width: 300px !important;
   margin: 10px;
@@ -186,6 +213,7 @@ input:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .about-me .about-me-texts {
   display: flex;
@@ -279,7 +307,7 @@ input:focus {
   flex-direction: row;
   justify-content: center;
 }
-.article {
+.articlefooter {
   display: flex;
   flex-direction: column;
   max-width: 350px;
@@ -293,19 +321,51 @@ input:focus {
 .footer {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer span {
   color: #8d8d8e;
   font-size: 14px;
 }
-.img-footer{
+.img-footer {
   height: auto;
   width: auto;
+
 }
-.footer div{
+.footer div {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer-navigation ul {
+  display: flex;
+  flex-direction: row;
+}
+.footer-navigation ul li a {
+  font-size: 12px !important;
+  margin: 10px !important;
+  color: #fff !important;
+}
+.footer-nav {
+  color: #8d8d8e;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 5px;
+  cursor: pointer;
+  -webkit-transition: ease-in-out .3s ;
+  -moz-transition: ease-in-out .5s;
+  -ms-transition: ease-in-out .5s;
+  -o-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+}
+.footer-nav:hover{
+  color: #fff;
+}
+.x-color {
+  text-transform: uppercase;
+  border: 1px solid #8d8d8e;
+  padding: 5px;
 }
 @media (max-width: 575px) {
 }

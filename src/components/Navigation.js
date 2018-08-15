@@ -38,7 +38,12 @@ export default class Navigation extends React.Component {
         <Navbar color="faded" light expand="md">
           <NavbarBrand href="/">
             <div className="avatar-container">
-              <img alt="logo" className="circle-avatar" height={50} src={Avatar} />
+              <img
+                alt="logo"
+                className="circle-avatar"
+                height={50}
+                src={Avatar}
+              />
               <div>
                 <span>Lewis</span>
                 <span>Nathaniel</span>
@@ -48,45 +53,7 @@ export default class Navigation extends React.Component {
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
-            <Nav className="ml-auto" navbar>
-              <NavItem>
-                <NavLink className="menu-item" href="/components/ ">
-                  work
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  className="menu-item"
-                  href="https://github.com/reactstrap/reactstrap"
-                >
-                  about me
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  className="menu-item"
-                  href="https://github.com/reactstrap/reactstrap"
-                >
-                  blog
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  className="menu-item"
-                  href="https://github.com/reactstrap/reactstrap"
-                >
-                  contact
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink
-                  className="menu-item rounded-link"
-                  href="https://github.com/reactstrap/reactstrap"
-                >
-                  hire me
-                </NavLink>
-              </NavItem>
-            </Nav>
+            <NavigationItems />
           </Collapse>
         </Navbar>
         <Modal isOpen={this.state.modal} toggle={this.toggleModal}>
@@ -104,3 +71,48 @@ export default class Navigation extends React.Component {
     );
   }
 }
+
+export const NavigationItems = () => {
+  return (
+    <Nav className="ml-auto" navbar>
+      <NavItem>
+        <NavLink className="menu-item" href="/components/ ">
+          work
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink
+          className="menu-item"
+          href="https://github.com/reactstrap/reactstrap"
+        >
+          about me
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink
+          className="menu-item"
+          href="https://github.com/reactstrap/reactstrap"
+        >
+          blog
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink
+          className="menu-item"
+          href="https://github.com/reactstrap/reactstrap"
+        >
+          contact
+        </NavLink>
+      </NavItem>
+      <NavItem>
+        <NavLink
+          className="menu-item rounded-link"
+          href="https://github.com/reactstrap/reactstrap"
+          id="nav-lastchild"
+        >
+          hire me
+        </NavLink>
+      </NavItem>
+    </Nav>
+  );
+};

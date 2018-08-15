@@ -4,7 +4,7 @@ import ImgAbout from "../static/img/aboutme.jpg";
 export default class AboutMe extends React.Component {
   render() {
     return (
-      <div className="container about-me remove-padding ">
+      <div className="container about-me remove-padding mb-5 ">
         <div className="about-left-side m-4">
           <img src={ImgAbout} alt="about-me"/>
         </div>
