@@ -9,9 +9,9 @@ import Twitter from "../static/img/twitter-grey.png";
 export default class Footer extends React.Component {
   render() {
     return (
-      <div className="container-fluid remove-padding bg-footer">
-        <div className="container footer p-2">
-          <div>
+      <div className="container-fluid remove-padding bg-footer ">
+        <div className="container footer p-2 flex-column-reverse flex-lg-row">
+          <div className="flex-column-reverse flex-sm-row">
             <span>© 2018 UI43 - Free Templates</span>
             <div>
               <img alt="behance" src={Behance} className="ml-2" />
@@ -22,7 +22,7 @@ export default class Footer extends React.Component {
               <img alt="twitter" src={Twitter} className="ml-2" />
             </div>
           </div>
-          <div className="footer-navigation">
+          <div className="footer-navigation mb-3 mb-lg-0 flex-column flex-sm-row">
             <span className="footer-nav">Work</span>
             <span className="footer-nav">About me</span>
             <span className="footer-nav">Blog</span>

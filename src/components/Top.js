@@ -12,7 +12,7 @@ export default class Top extends React.Component {
       <Fragment>
         <div className="container top-container p-16 remove-padding d-sm-flex flex-column flex-sm-column flex-md-column flex-lg-row
         align-items-center">
-          <div className="left-side mb-5">
+          <div className="left-side p-4 mb-5">
             <span className="hello">Hello, I'm</span>
             <span className="name">Lewis Nathaniel</span>
             <span className="uiux">UI & UX Designer</span>

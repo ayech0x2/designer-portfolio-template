@@ -10,7 +10,7 @@ body {
 input:focus {
   outline: none;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
 #root {
@@ -162,29 +162,29 @@ input:focus {
   font-weight: 700;
   cursor: pointer;
 }
-.work-modal span{
+.work-modal span {
   font-size: 14px;
   color: #393939;
   line-height: 1.4;
 }
-.modal-footer{
-  display: flex!important;
+.modal-footer {
+  display: flex !important;
   flex-direction: row !important;
   justify-content: center !important;
   align-items: center;
 }
-.work-modal-title h5{
+.work-modal-title h5 {
   font-weight: 700 !important;
   font-size: 25px;
 }
-.modal-footer span{
-  margin: 10px!important;
-  font-size: 16px!important;
+.modal-footer span {
+  margin: 10px !important;
+  font-size: 16px !important;
 }
-.work-modal{
-  display:flex;
+.work-modal {
+  display: flex;
   flex-direction: column;
-  padding: 20px!important;
+  padding: 20px !important;
 }
 .card {
   width: 300px !important;
@@ -251,16 +251,15 @@ input:focus {
 }
 
 .testimonial-avatar {
-}
-.testimonial-avatar {
   position: absolute;
   margin: auto;
-  left: 45%;
   bottom: -100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 .testimonial-avatar-text {
   display: flex;
@@ -283,9 +282,12 @@ input:focus {
   justify-content: center;
 }
 .box {
-  height: 260px;
-  width: 350px;
+  height: 250px;
+  width: 340px;
   background: #717072;
+}
+.like-box {
+  width: 340px;
 }
 .little-box {
   background: #2b2a2c;
@@ -312,9 +314,7 @@ input:focus {
   flex-direction: column;
   max-width: 350px;
 }
-.xs {
-  width: 170px;
-}
+
 .bg-footer {
   background: #2b2a2c;
 }
@@ -331,7 +331,6 @@ input:focus {
 .img-footer {
   height: auto;
   width: auto;
-
 }
 .footer div {
   display: flex;
@@ -353,13 +352,13 @@ input:focus {
   font-weight: 700;
   margin: 5px;
   cursor: pointer;
-  -webkit-transition: ease-in-out .3s ;
-  -moz-transition: ease-in-out .5s;
-  -ms-transition: ease-in-out .5s;
-  -o-transition: ease-in-out .5s;
-  transition: ease-in-out .5s;
+  -webkit-transition: ease-in-out 0.3s;
+  -moz-transition: ease-in-out 0.5s;
+  -ms-transition: ease-in-out 0.5s;
+  -o-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
 }
-.footer-nav:hover{
+.footer-nav:hover {
   color: #fff;
 }
 .x-color {
@@ -367,15 +366,23 @@ input:focus {
   border: 1px solid #8d8d8e;
   padding: 5px;
 }
-.img-auto{
+.img-auto {
   width: 100%;
   height: auto;
 }
 @media (max-width: 575px) {
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
+  .navbar-nav{
+    display: flex;
+    align-items: center;
+  }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
