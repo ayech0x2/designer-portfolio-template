@@ -371,22 +371,46 @@ input:focus {
   height: auto;
 }
 @media (max-width: 575px) {
-  .navbar-nav{
+  .navbar-nav {
     display: flex;
     align-items: center;
+  }
+  .btn-rounded {
+    text-align: center;
+    font-size: 12px !important;
+  }
+  .btn-none-rounded {
+    text-align: center;
+    font-size: 12px !important;
   }
 }
 
 /*// Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) {
-  .navbar-nav{
+  .navbar-nav {
     display: flex;
     align-items: center;
+  }
+  .btn-rounded {
+    text-align: center;
+    font-size: 12px !important;
+  }
+  .btn-none-rounded {
+    text-align: center;
+    font-size: 12px !important;
   }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) {
+  .btn-rounded {
+    text-align: center;
+    font-size: 14px !important;
+  }
+  .btn-none-rounded {
+    text-align: center;
+    font-size: 14px !important;
+  }
 }
 
 /*// Large devices (desktops, 992px and up)*/
