@@ -12,7 +12,7 @@ export default class Top extends React.Component {
       <Fragment>
         <div className="container top-container p-16 remove-padding d-sm-flex flex-column flex-sm-column flex-md-column flex-lg-row
         align-items-center">
-          <div className="left-side p-4 mb-5">
+          <div className="left-side p-4 mb-5 text-center text-md-left">
             <span className="hello">Hello, I'm</span>
             <span className="name">Lewis Nathaniel</span>
             <span className="uiux">UI & UX Designer</span>
@@ -24,7 +24,7 @@ export default class Top extends React.Component {
               <img alt="instagram" src={Instagram} />
               <img alt="twitter" src={Twitter} />
             </div>
-            <div className="btns-container">
+            <div className="btns-container d-flex justify-content-center justify-content-md-start">
               <span className="btn-rounded">hire me</span>
               <span className="btn-none-rounded">see my resume</span>
             </div>
