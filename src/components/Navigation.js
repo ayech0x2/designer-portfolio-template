@@ -10,6 +10,8 @@ import {
   Modal
 } from "reactstrap";
 import Avatar from "../static/img/avatar.png";
+import Contact from "./Contact";
+// import Contact from "./Contact";
 
 export default class Navigation extends React.Component {
   constructor(props) {
@@ -18,7 +20,8 @@ export default class Navigation extends React.Component {
     this.toggle = this.toggle.bind(this);
     this.state = {
       isOpen: false,
-      modal: false
+      modal: false,
+      contactModal: false
     };
   }
   toggle() {
@@ -35,6 +38,7 @@ export default class Navigation extends React.Component {
   handleMenu = name => {
     this.props.scrollTo(name);
   };
+
   render() {
     return (
       <div className="container navigation-bar remove-padding">
@@ -87,7 +91,7 @@ export default class Navigation extends React.Component {
                 <NavLink
                   className="menu-item"
                   href="#"
-                  onClick={() => this.handleMenu("contact")}
+                  onClick={this.toggleModal}
                 >
                   contact
                 </NavLink>
@@ -104,16 +108,8 @@ export default class Navigation extends React.Component {
             </Nav>
           </Collapse>
         </Navbar>
-        <Modal isOpen={this.state.modal} toggle={this.toggleModal}>
-          <div className="input-icon-wrap d-flex p-5">
-            <div className="input-icon-wrap-wrapper w-100 d-flex flex-row align-items-center">
-              <input
-                type="text"
-                placeholder="What are you looking for!"
-                className=" input-with-icon soft italic"
-              />
-            </div>
-          </div>
+        <Modal isOpen={this.state.modal} toggle={this.toggleModal} className="w-100">
+          <Contact/>
         </Modal>
       </div>
     );

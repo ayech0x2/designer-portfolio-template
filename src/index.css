@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
 }
-input:focus {
+input,textarea:focus {
   outline: none;
 }
 ::-webkit-scrollbar {
@@ -370,6 +370,40 @@ input:focus {
   width: 100%;
   height: auto;
 }
+
+
+.contact .contact-left .contact-txt{
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 40px;
+}
+.contact .contact-left .call{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.img-contact{
+  width: auto;
+  height: auto;
+}
+.rounded-input{
+  border-radius: 25px;
+  border: 1px solid #535353;
+  padding: 25px;
+  font-size: 12px;
+  width: 200px;
+  height: 15px;
+}
+.contact-email span{
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+
+
+
+
 @media (max-width: 575px) {
   .navbar-nav {
     display: flex;
@@ -382,6 +416,15 @@ input:focus {
   .btn-none-rounded {
     text-align: center;
     font-size: 12px !important;
+  }
+  .modal{
+    display: flex!important;
+    justify-content: center!important;
+    padding: 50px 0 50px 0 ;
+    overflow: scroll;
+  }
+  .modal-dialog{
+    max-width: 80%!important;
   }
 }
 
@@ -399,6 +442,9 @@ input:focus {
     text-align: center;
     font-size: 12px !important;
   }
+  .modal-dialog{
+    max-width: 80%!important;
+  }
 }
 
 /*// Medium devices (tablets, 768px and up)*/
@@ -415,10 +461,16 @@ input:focus {
 
 /*// Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) {
+  .modal-dialog{
+    max-width: 80%!important;
+  }
 }
 
 /*// Extra large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) {
+  .modal-dialog{
+    max-width: 950px!important;
+  }
 }
 
 .p-16 {
