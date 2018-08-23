@@ -1,6 +1,7 @@
 import React from "react";
 import Man from "../static/img/designer.jpg";
 import Phone from "../static/img/telephone-symbol-button.svg";
+import Envelope from "../static/img/close-envelope.svg";
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -24,11 +25,11 @@ export default class Contact extends React.Component {
           </div>
           <div className="d-flex flex-column m-2 ml-sm-5 m-sm-3 ">
             <div className="d-flex flex-row align-items-center">
-              <img height={15} src={Phone} />
+              <img height={15} src={Phone} alt="phone"/>
               <span>(200) 100 3000 </span>
             </div>
             <div className="d-flex flex-row align-items-center">
-              <img height={15} src={Phone} />
+              <img height={15} src={Envelope} alt="envelope"/>
               <span>designer@ui43.com</span>
             </div>
           </div>
@@ -45,7 +46,7 @@ export default class Contact extends React.Component {
             </div>
         </div>
         <div className="contact-right d-flex justify-content-center align-items-center" >
-        <img  src={Man} className="img-auto "/>
+        <img  src={Man} className="img-auto" alt="designer"/>
         </div>
       </div>
     );
